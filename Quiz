@@ -1,0 +1,67 @@
+s="string"
+for c in s:
+
+for c in s[0:5]:
+    print(c)
+
+print(list(reversed(list(s))))
+for c in s:
+    print(c)
+
+
+yn = input("lubie polkish")
+if yn.startswith("t"):
+    for i in range(20):
+        print(":)")
+yn = input("lubie detush ").lower()
+if yn == "tak":
+    for i in range(20):
+        print(":)")
+elif yn == "nie":
+    for i in range(20):
+       print(":(")
+else:
+    print("?")
+
+yt = input("serio lubisz? ").lower()
+if yt == "nie":
+    for i in range(20):
+       print(":(")
+elif yt == "tak":
+    for i in range(20):
+        print(":)")
+else:
+    print("?")
+yt = input("serio lubisz?")
+if yt.startswith("n"):
+    for i in range(20):
+        print(":(")
+yn = input("lubie english ").lower()
+if yn == "tak":
+    for i in range(20):
+        print(":)")
+elif yn == "nie":
+    yn = input("serio nie lubisz? ").lower()
+    if yn == "nie":
+        for i in range(20):
+            print(":(")
+    elif yn == "tak":
+       for i in range(20):
+            print(":(")
+       exit()
+    else:
+        print("?")
+    for i in range(20):
+       print(":(")
+else:
+    print("?")
+
+yt = input("serio lubisz? ").lower()
+if yt == "nie":
+    for i in range(20):
+       print(":(")
+elif yt == "tak":
+    for i in range(20):
+        print(":)")
+else:
+    print("?")
