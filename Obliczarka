@@ -1,3 +1,4 @@
+import Sortowanie.py
 i = int(input())
 def funkcja(n):
     if n == 1:
