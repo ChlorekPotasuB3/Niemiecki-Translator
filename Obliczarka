@@ -1,0 +1,24 @@
+i = int(input())
+def funkcja(n):
+    if n == 1:
+        return 1
+    return n + funkcja (n-1)
+print(funkcja(i))
+#2
+i = int(input("i "))
+x = float(input("x "))
+def funkcja(n,x):
+    if n > 1:
+        return x * funkcja(n-1, x)
+    return x
+print(funkcja(i, x))
+#3
+i = int(input("i "))
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+print(fib(i))
