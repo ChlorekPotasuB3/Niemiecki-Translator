@@ -1,0 +1,51 @@
+s=set([1,2,3, 1, 1, 2,2,3,3,3,3,3])
+print(2 in s)
+
+print(abs(-1))
+
+print(sorted([1,2,3, 1, 1, 2,2,3,3,3,3,3]))
+print(str(sorted("a,a,a,a,a,a,a,b,b,b,b,b,b,vc,bv,cv,vc,vc,v,cxde,a,a,a".split(","))))
+print(
+    str(
+        sorted(
+            "a,a,a,a,a,a,a,b,b,b,b,b,b,vc,bv,cv,vc,vc,v,cxde,a,a,a".split(","),reverse=True)
+    )
+)
+print(str(sorted("a,a,a,a,1,1,a,a,a,b,b,b,b,b,b,vc,bv,cv,2,2,vc,vc,v,cxde,a,a,a".split(","))))
+def angielski(f):
+    if f == "angielski":
+        return 0
+    if f == "niemiecki":
+        return 2
+    return 1
+
+def niemiecki(c):
+    if c == "niemiecki":
+        print(c)
+        return 2
+
+def printkey(el):
+    r = angielski(el)
+    print(el,
+          r)
+    return r
+
+print(
+    str(
+        sorted(
+            "angielski,niemiecki,polski".split(","),
+            key=printkey,
+            reverse=True)
+    )
+)
+#print(str(sorted(".,angielski".split(","))))
+
+def chglist(l):
+    l[1] = 77
+    return l
+
+li = "a,a,a,a,1,1,a,a,a,b,b,b,b,b,b,vc,bv,cv,2,2,vc,vc,v,cxde,a,a,a".split(",")
+print(li)
+print(chglist(li))
+print(li)
+
